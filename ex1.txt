@@ -1,0 +1,42 @@
+Algoritmo "semnome"
+//  
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 21/07/2020
+Var
+// Seção de Declarações das variáveis
+x:inteiro
+nota:vetor [0..4] de inteiro
+soma,res:real
+
+
+procedimento le
+inicio
+escreval ("digite as notas")
+para x de 0 ate 4 passo 1 faca
+leia (nota[x])
+soma <- nota[x]+ soma
+fimpara
+fimprocedimento
+
+funcao media:real
+var
+calc:real
+inicio
+calc<- soma/5
+retorne calc
+fimfuncao
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+le
+res <- media
+escreval ("a media do aluno foi",res)
+se (res<7) entao
+escreva ("reprovado")
+senao
+escreva("aprovado")
+fimse
+
+Fimalgoritmo

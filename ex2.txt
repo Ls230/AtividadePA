@@ -1,0 +1,52 @@
+Algoritmo "semnome"
+//  
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 21/07/2020
+Var
+// Seção de Declarações das variáveis 
+notas: vetor [0..4, 0..2] de real
+x,y:inteiro
+ref:caractere
+
+funcao cadastro:caracter
+inicio
+para x de 0 ate 4 passo 1 faca
+escreval ("notas do ", x+1, " aluno:")
+leia (notas[x,0])
+para y de 1 ate 2 passo 1 faca
+leia (notas[x,y])
+fimpara
+escreval()
+fimpara
+escreval()
+retorne "========== notas cadastradas =========="
+fimfuncao
+
+funcao dados:caractere
+inicio
+escreval()
+escreval ("aluno      nota1      nota2      nota3")
+
+escreval()
+para x de 0 ate 4 passo 1 faca
+escreva("aluno",x+1,"     ",notas[x,0],"      ")
+
+para y de 1 ate 2 passo 1 faca
+escreva (notas[x,y],"      ")
+fimpara
+escreval()
+fimpara
+
+fimfuncao
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+ref<- cadastro
+escreva (ref)
+ref<- dados
+
+
+
+Fimalgoritmo
